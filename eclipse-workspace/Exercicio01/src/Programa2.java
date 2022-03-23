@@ -27,7 +27,7 @@ public class Programa2 { //inicio
 
 		for(int i =0; i<5; i++){
 			System.out.println("mostre sua matricula: "); 
-		    System.out.println("Digite o nome nº" +(i+1)+ ":");
+		    System.out.println("Digite o nome n�" +(i+1)+ ":");
 		    matricula = dados.nextLine();
 		    nome = dados.nextLine();
 		    System.out.println("Digite a nota" +(i+1)+ ":");
@@ -41,13 +41,12 @@ public class Programa2 { //inicio
 		for(int i = 0; i < 5; ++i){
 		  if(nota[i] => media){
 		      maior = nota[i];
-		     System.out.println("O aluno "+nome+" possui média "+maior+", maior que a média "+media+ " Aprovado");
+		     System.out.println("O aluno "+nome+" possui media "+maior+", maior que a media "+media+ " Aprovado");
 		  }else {
-			  System.out.println("O aluno "+nome+" possui média "+maior+", maior que a média "+media+ "Nao aprovado");
+			  System.out.println("O aluno "+nome+" possui media "+maior+", maior que a media "+media+ "Nao aprovado");
 		  }        
 		}  
 
 	}//fim metodo main
 	
 }//fim
-
