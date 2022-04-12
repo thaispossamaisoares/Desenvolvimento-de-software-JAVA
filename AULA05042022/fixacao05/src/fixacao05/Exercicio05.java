@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Exercicio05 {
 	public static void main(String[] args) throws FileNotFoundException {
-		File arquivo = new File("C:\\Users\\Aluno\\Downloads\\grupos-tabulados\\grupos-tabulados.txt");
+		File arquivo = new File("C:/Users/Aluno/Downloads/grupos-tabulados.txt");
 		Scanner leitor = new Scanner(arquivo);
 		leitor.nextLine();
 		
@@ -31,7 +31,30 @@ public class Exercicio05 {
 			String nota = dados[1];
 			double confere = Double.parseDouble(nota);
 			
-			if(letra.equals("A")) {
+			
+			
+			/*fazendo com  switch case */
+			switch(dados[0]){
+			case "A":
+				totalA = totalA + confere;
+				break;
+			case "B":
+				totalB = totalB + confere;
+				break;
+			case "C":
+				totalC = totalC + confere;
+				break;
+			case "D":
+				totalD = totalD + confere;
+				break;
+			case "E":
+				totalE = totalE + confere;
+				break;
+			case "F":
+				totalF = totalF + confere;
+				break;
+			}
+			/*if(letra.equals("A")) {
 				totalA = totalA + confere;
 			}
 			if(letra.equals("B")) {
@@ -48,22 +71,24 @@ public class Exercicio05 {
 			}
 			if(letra.equals("F")) {
 				totalF = totalF + confere;
-			}
+			}*/
 			
 			contaTudo = totalF + totalE + totalD + totalC + totalB + totalA;
 		}
 		
-		System.out.println("O TOTAL DE A É: "+totalA);
-		System.out.println("O TOTAL DE B É: "+totalB);
-		System.out.println("O TOTAL DE C É: "+totalC);
-		System.out.println("O TOTAL DE D É: "+totalD);
-		System.out.println("O TOTAL DE E É: "+totalE);
-		System.out.println("O TOTAL DE F É: "+totalF);
+		System.out.println("O TOTAL DE A E: "+totalA);
+		System.out.println("O TOTAL DE B E: "+totalB);
+		System.out.println("O TOTAL DE C E: "+totalC);
+		System.out.println("O TOTAL DE D E: "+totalD);
+		System.out.println("O TOTAL DE E E: "+totalE);
+		System.out.println("O TOTAL DE F E: "+totalF);
 		System.out.println("O TOTAL DE TUDO: "+contaTudo);
 		
 
 		leitor.close();
 		
+
+
 		 
 	}
 }
