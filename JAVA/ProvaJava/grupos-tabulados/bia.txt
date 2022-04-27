@@ -1,0 +1,1 @@
+valor a: 174valor b: 184valor c: 25valor d: 59valor e: 42valor f: 200
